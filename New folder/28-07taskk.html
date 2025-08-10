@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TSRTC Bus Pass Application</title>
+  <style>
+    table {
+      width: 100%;
+      border-spacing: 10px;
+    }
+    td {
+      padding: 5px;
+    }
+    section-title {
+      background-color: #2196F3;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+    }
+    .red-star {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<img src="/RTCbuslogo.jpeg.jpg">
+
+<!-- Applicant Details -->
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="4" class="section-title">Applicant Details</td>
+  </tr>
+  <tr>
+    <td>Name<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+    <td>Father/Guardian's Name<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Date of Birth<span class="red-star">*</span>:</td>
+    <td><input type="date"></td>
+    <td>Gender:</td>
+    <td>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+    </td>
+  </tr>
+  <tr>
+    <td>Aadhar No<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+    <td>Whatsapp No<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Email ID<span class="red-star">*</span>:</td>
+    <td><input type="email"></td>
+    <td>Photo<span class="red-star">*</span>:</td>
+    <td><input type="file"></td>
+  </tr>
+</table>
+
+<!-- Residential Address -->
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="4" class="section-title">Residential Address Details</td>
+  </tr>
+  <tr>
+    <td>Applicant's Address<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+    <td>District<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Hyderabad</option>
+        <option> Secundrabad</option>
+        <option> Nalgonda</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Mandal<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Hyderabad</option>
+      </select>
+    </td>
+    <td>Village<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Hyderabad</option>
+        <option> Ameerpet</option>
+        <option> Kukatpalli</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Pincode<span class="red-star">*</span>:</td>
+    <td><input type="text"></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<!-- Pass Type Details -->
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="4" class="section-title">Pass Type Details</td>
+  </tr>
+  <tr>
+    <td>City<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Hyderabad</option>
+        <option>Ameerpet</option>
+        <option>Kukatpalli</option>
+      </select>
+    </td>
+    <td>Pass Type<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>--select--</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<!-- Mode of Payment & Collection -->
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="4" class="section-title">Mode of Payment & Pass Collection</td>
+  </tr>
+  <tr>
+    <td>Payment Mode<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Select Payment Mode</option>
+      </select>
+    </td>
+    <td>Pass Delivery Mode<span class="red-star">*</span>:</td>
+    <td>
+      <select>
+        <option>Select Pass Delivery Mode</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Collection Center<span class="red-star">*</span>:</td>
+    <td colspan="3">
+      <select>
+        <option>--select--</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<!-- Captcha & Submit -->
+<div class="section">
+  <img src="/captcha.jpeg.jpg" alt="Captcha Image">
+  <br><br>
+  <input type="text" placeholder="Enter Captcha">
+
+</div> 
+<center>
+<button type="submit">Submit</button>
+</center>
+
+</form>
+
+</body>
+</html>
